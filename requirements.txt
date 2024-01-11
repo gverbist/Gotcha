@@ -1,3 +1,5 @@
 fastapi>=0.65.0
-uvicorn[standard]>=0.13.0
-
+Jinja2>=3.0.2
+SQLAlchemy>=1.4.25
+python-multipart==0.0.5
+uvicorn>=0.15.0
