@@ -15,15 +15,15 @@ from fastapi.templating import Jinja2Templates
 
 # app code starts here:
 app = FastAPI()
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
-
-@app.get("/")
-async def home_page(request: Request):
-
-    return templates.TemplateResponse("home/index.html", {"request": request})
+#app.mount("/static", StaticFiles(directory="static"), name="static")
+#templates = Jinja2Templates(directory="templates")
 
 
+
+#basic route
+@app.get("/hello")
+async def hello():
+    return {"message": "Hello World"}
 
 
 
