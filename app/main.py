@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi import Request, Depends
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
-from db.database import SessionLocal, engine
+#from db.database import SessionLocal, engine
 
 
 
